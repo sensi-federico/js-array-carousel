@@ -56,4 +56,13 @@ nextButtonEl.addEventListener('click', function() {
     nextSlide.classList.add('active');
 })
 
- 
+ prevButtonEl.addEventListener('click', function () {
+    const image = document.querySelectorAll('.slides > img');
+    const currentSlide = image[imageActive];
+
+    currentSlide.classList.remove('active');
+    imageActive--;
+
+    const nextSlide = image[imageActive];
+    nextSlide.classList.add('active');
+ } )
