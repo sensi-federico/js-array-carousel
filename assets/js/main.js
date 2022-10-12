@@ -42,6 +42,11 @@ for (let i = 0; i < slides.length; i++) {
     slidesEl.insertAdjacentHTML('beforeend', markUp);
 }
 
+// MILESTONE 3
+// Al click dell'utente sulle frecce, il programma cambierà 
+// l’immagine attiva, che quindi verrà 
+// visualizzata al posto della precedente.
+
 const nextButtonEl = document.querySelector('.next');
 const prevButtonEl = document.querySelector('.prev');
 
