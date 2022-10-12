@@ -25,3 +25,14 @@ img:not(img.active) {
 .fs-40 {
     font-size: 40px;
 } 
+
+.card_img {
+    width: 110px;
+    height: 110px;
+    background-color: brown;
+}
+
+.container-xm {
+    max-width: 50%;
+    margin: auto;
+}

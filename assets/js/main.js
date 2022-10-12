@@ -51,22 +51,33 @@ const nextButtonEl = document.querySelector('.next');
 const prevButtonEl = document.querySelector('.prev');
 
 nextButtonEl.addEventListener('click', function() {
+    
     const images = document.querySelectorAll('.slides > img');
     const currentSlide = images[imageActive];
 
     currentSlide.classList.remove('active');
+
+
+
     imageActive++;
+
+
+
     
     const nextSlide = images[imageActive];
     nextSlide.classList.add('active');
 })
 
  prevButtonEl.addEventListener('click', function () {
+
     const image = document.querySelectorAll('.slides > img');
     const currentSlide = image[imageActive];
 
     currentSlide.classList.remove('active');
+
+
     imageActive--;
+
 
     const nextSlide = image[imageActive];
     nextSlide.classList.add('active');
